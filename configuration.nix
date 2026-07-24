@@ -130,6 +130,7 @@
 	networkmanagerapplet
 	procps
 	swww
+	cava
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -141,10 +142,14 @@
   # };
 
   # List services that you want to enable:
-
+  # Gráficos y aceleración de hardware
+  hardware.graphics = {
+  enable = true;
+  enable32Bit = true;
+};
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
+  programs.gamemode.enable = true;
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
