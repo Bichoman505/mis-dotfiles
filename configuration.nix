@@ -26,6 +26,16 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  # Bluetooth
+  # Habilitar Bluetooth
+hardware.bluetooth = {
+  enable = true;
+  powerOnBoot = true; # Encender el Bluetooth al iniciar
+};
+
+# Interfaz gráfica/applet para la barra o bandeja del sistema
+services.blueman.enable = true;
+
 
   # Enable networking
   networking.networkmanager.enable = true;
